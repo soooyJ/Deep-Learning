@@ -1,0 +1,25 @@
+DL = 딥러닝 (DNN)
+        Tensor: Shape, DType
+		Dense
+			Activation Function
+				Node ---> Tensor, Edge ---> Sigmoid(-->Tanh-->RelU)
+--------> 이런 걸 네트워크라고 한다.
+
+* 차수와 데이터 입력 값만 설정 ---> Activation Function ---> 가중치가 알아서 출력됨 (숨어있음)
+
+* 진짜 값과 가짜 값을 비교하기 위해(?) Softmax로 확률값 계산한 후, Cost Function을 통해 합격, 불합격 결정
+
+머신러닝: 특성 주어짐. / 딥러닝: 특성 뽑아냄. (초등학생도 할 수 있다. 난 안 할래.)
+* 차이를 비교하려면 Cost Function, 가중치.. 뭘하기 위해 역전파 알고리즘 사용.
+* 미분값 -> 순간적으로의 변화값을 통해 어떤 방향으로 학습할지 결정
+
+3. Fit Network -> history 보여줌.
+4. Evaluate Network
+
+ • Input object -> 입력되는 열의 갯수
+ • Dense layer -> 나가는 차수 결정 ( 3x4 )
+ • Activation layer -> 2가지 방식으로 할 수 있다.
+ • Lambda layer -> 함수를 이용해 데이터 변형
+ • Identity layer -> 데이터가 들어온대로 나간다. (회귀/예측에서)
+
+내일은 CNN.
